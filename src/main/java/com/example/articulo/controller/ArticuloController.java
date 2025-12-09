@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "*") //importante 
+@CrossOrigin(origins = "*") // importante
 @RestController
-@RequestMapping("/api/articulos") //definir la ruta base para los endpoints - añadí el api
+@RequestMapping("/api/articulos") // definir la ruta base para los endpoints - añadí el api
 
 public class ArticuloController {
     private final ArticuloService articuloService;
@@ -21,8 +21,18 @@ public class ArticuloController {
     }
 
     @GetMapping
-    public List<Articulo> listar() {
-        return articuloService.listarArticulos();
+    public List<Articulo> listarActivos() {
+        return articuloService.listarActivos();
+    }
+
+    @GetMapping("/inactivos")
+    public List<Articulo> listarInactivos() {
+        return articuloService.listarInactivos();
+    }
+
+    @GetMapping("/todos")
+    public List<Articulo> listartodos() {
+        return articuloService.listarTodos();
     }
 
     @GetMapping("/{id}")

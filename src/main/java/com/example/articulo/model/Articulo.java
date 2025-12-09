@@ -1,5 +1,6 @@
 package com.example.articulo.model; // opracticar más el uso de los packeges se me pierden muy facíl
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
@@ -7,7 +8,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 
 @Entity
-@Table(name = "articulos") //Nota: por error puse "articulo" y al modificarlo en plurar hibernate directamente creó la tabla pensé que modificaba la existente.
+@Table(name = "articulos") // Nota: por error puse "articulo" y al modificarlo en plurar hibernate
+                           // directamente creó la tabla pensé que modificaba la existente.
 public class Articulo {
 
     @Id
@@ -17,6 +19,9 @@ public class Articulo {
     private String nombre;
     private Double precio;
     private String imagen;
+
+    @Column(nullable = false)
+    private Boolean activo = true; // creo que es mejor practica añadir un campo de validación lógica
 
     public Articulo() {
     }
@@ -59,4 +64,13 @@ public class Articulo {
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }
+
+    public Boolean getActivo() {
+        return activo;
+    }
+
+    public void setActivo(Boolean activo) {
+        this.activo = activo;
+    }
+
 }

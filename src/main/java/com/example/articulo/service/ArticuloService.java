@@ -5,7 +5,12 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ArticuloService {
-    List<Articulo> listarArticulos();
+
+    List<Articulo> listarActivos();
+
+    List<Articulo> listarInactivos();
+
+    List<Articulo> listarTodos();
 
     Optional<Articulo> obtenerArticuloID(Long id);
 
