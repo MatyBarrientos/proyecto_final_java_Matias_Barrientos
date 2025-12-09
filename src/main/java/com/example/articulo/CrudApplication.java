@@ -1,13 +1,12 @@
-package com.example.crud;
+package com.example.articulo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProyectoApplication {
+public class CrudApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProyectoApplication.class, args);
+		SpringApplication.run(CrudApplication.class, args);
 	}
-
 }
