@@ -6,7 +6,6 @@ Proyecto realizado como parte del Trabajo Final de Talento Tech Java.
 
 Podés ver una demostración de la API funcionando en el siguiente video:
 
-<!-- [Ver demo en YouTube](https://youtu.be/XhVrbAaYPHQ) -->
 
 [![Demo en YouTube](https://img.youtube.com/vi/XhVrbAaYPHQ/hqdefault.jpg)](https://www.youtube.com/watch?v=XhVrbAaYPHQ)
 
@@ -54,6 +53,6 @@ En el archivo `src/main/resources/application.properties` se configura la conexi
 spring.datasource.url=jdbc:mysql://localhost:3306/ARTICULOS_DB?useSSL=false&serverTimezone=UTC
 spring.datasource.username=root
 spring.datasource.password=root
-spring.jpa.hibernate.ddl-auto=update (sé que no es buena práctica pero lo veia necesario para las modificaciones que fui realizando en mi BD)
+spring.jpa.hibernate.ddl-auto=update 
 spring.jpa.show-sql=true
 ```
