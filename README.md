@@ -6,7 +6,9 @@ Proyecto realizado como parte del Trabajo Final de Talento Tech Java.
 
 Podés ver una demostración de la API funcionando en el siguiente video:
 
-[Ver demo en YouTube](https://youtu.be/XhVrbAaYPHQ)
+<!-- [Ver demo en YouTube](https://youtu.be/XhVrbAaYPHQ) -->
+
+[![Demo en YouTube](https://img.youtube.com/vi/XhVrbAaYPHQ/hqdefault.jpg)](https://www.youtube.com/watch?v=XhVrbAaYPHQ)
 
 ## Tecnologías utilizadas
 
